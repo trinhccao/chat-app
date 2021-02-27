@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100vh;
+}
+
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+}
+
+#app {
+  position: relative;
+  margin: 0 auto;
+  max-width: 932px;
+  height: 100vh;
+  background-color: #edf0f5;
+}
+
+.msg-log {
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  bottom: 80px;
+  padding: 16px;
+  width: 100%;
+}
+
+.msg-placeholer {}
+
+.msg-placeholer.msg-in {}
+
+.msg-placeholer.msg-out {
+  text-align: right;
+}
+
+.msg-log .msg-content {
+  display: inline-block;
+  margin-bottom: 35px;
+  padding: 17px;
+  border-radius: 15px;
+}
+
+.msg-placeholer.msg-in .msg-content {
+  background-color: #fff;
+}
+
+.msg-placeholer.msg-out .msg-content {
+  background-color: #d0d3e3;
+}
+
+.chat-compose {
+  position: absolute;
+  bottom: 16px;
+  padding: 0 16px;
+  width: 100%;
+  height: 64px;
+}
+
+.chat-compose > input[type=text] {
+  display: block;
+  padding: 0 92px 0 22px;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+}
+
+.chat-compose > button[type=submit] {
+  position: absolute;
+  right: 22px;
+  top: 8px;
+  margin: 0;
+  padding: 0;
+  width: 48px;
+  height: 48px;
+  border: none;
+  background-image: url("../img/ico-send.png");
+  background-size: 100%;
+  background-color: #00a389;
+  border-radius: 15px;
+}
